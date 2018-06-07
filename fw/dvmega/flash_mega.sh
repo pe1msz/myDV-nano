@@ -12,7 +12,7 @@ for found in $FIRMWARE
 do
   echo "Found $found firmware..."
   # take action on this file, upload it using special commands to dvmega.
-  /usr/bin/cast-avrdude -p m328p -c arduino -P /dev/ttyS2 -b 115200 -F -U flash:w:${found} -v 
+  /usr/bin/cast-avrdude -p m328p -c arduino -P /dev/ttyAMA0 -b 115200 -F -U flash:w:${found} -v 
  
   # move to backup-folder, and reboot the unit
   mv ${found} ./dvmega/backup

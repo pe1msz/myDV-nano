@@ -1,3 +1,4 @@
+#!/bin/sh
 sudo -i
 rpi-rw
 cd /usr/bin

@@ -18,3 +18,6 @@ sudo update-rc.d CastFan defaults
 cd /var/www/dashboard/admin/fw/pyserial-3.2.1 
 sudo python setup.py install
 sudo reboot now
+
+
+
